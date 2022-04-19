@@ -34,7 +34,7 @@ $:.unshift File.join(PUI_ROOT, 'lib')
 $:.unshift File.join(PUI_ROOT, 'lib', 'coderay', 'lib')
 
 def windows?
-  Config::CONFIG['host'].include?('mswin')
+  RbConfig::CONFIG['host'].include?('mswin')
 end
 
 NATURAL_DOCS  = File.join(PUI_LIB_DIR, 'naturaldocs', "NaturalDocs")
